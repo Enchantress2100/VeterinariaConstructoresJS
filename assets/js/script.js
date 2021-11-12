@@ -14,13 +14,13 @@ resultado.appendChild(p)
 
 if (tipo=='perro'){
     console.log('entre a perro')
-    let perro= new Mascota(propietario, telefono, direccion, nombreMascota, tipo, enfermedad)
+    let perro= new Mascota(propietario, telefono, direccion, tipo, nombreMascota, enfermedad)
     p.innerHTML=`${perro.datosPropietario()}, la mascota es un ${perro.tipo}, su nombre es ${perro.nombreMascota} y su enfermedad es ${perro.enfermedad}`
 }else if(tipo=='gato'){
-    let gato= new Mascota(propietario, telefono, direccion,nombreMascota, tipo, enfermedad)
+    let gato= new Mascota(propietario, telefono, direccion, tipo,nombreMascota,enfermedad)
     p.innerHTML=`${gato.datosPropietario()}, la mascota es un ${gato.tipo}, su nombre es ${gato.nombreMascota} y su enfermedad es ${gato.enfermedad}`
 }else if(tipo=='conejo'){
-    let conejo=new Mascota(propietario,telefono,direccion, nombreMascota, tipo, enfermedad)
+    let conejo=new Mascota(propietario,telefono,direccion, tipo,nombreMascota, enfermedad)
     p.innerHTML=`${conejo.datosPropietario()}, la mascota es un ${conejo.tipo}, su nombre es ${conejo.nombreMascota} y su enfermedad es ${conejo.enfermedad}`
         }
     }
