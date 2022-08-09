@@ -13,7 +13,6 @@ const p=document.createElement('p')
 resultado.appendChild(p)
 
 if (tipo=='perro'){
-    console.log('entre a perro')
     let perro= new Mascota(propietario, telefono, direccion, tipo, nombreMascota, enfermedad)
     p.innerHTML=`${perro.datosPropietario()}, la mascota es un ${perro.tipo}, su nombre es ${perro.nombreMascota} y su enfermedad es ${perro.enfermedad}`
 }else if(tipo=='gato'){
@@ -33,7 +32,7 @@ class Propietario{
         this.direccion=direccion
     }
     datosPropietario(){
-        return (`los datos del propietario son: ${this.propietario}, su telefono es ${this.telefono}, su direccion es ${this.direccion}`)
+        return (`Los datos del propietario son: ${this.propietario}, su teléfono es ${this.telefono}, su dirección es ${this.direccion}`)
     }
 }
 class Animal extends Propietario{
@@ -65,7 +64,6 @@ class Mascota extends Animal{
         this._enfermedad=enfermedad_nueva
     }
 }
-
 
 //instancia para probar las clases (funcionan)
 let gato1= new Mascota('consuelo', '65016704', 'catedral', 'gato','Artemis', 'dolor de oido')
